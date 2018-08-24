@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+@WIZRPL(FORM=TARE);
+@WIZRPL(Top=50);
+@WIZRPL(Left=30);
+@WIZRPL(Width=500);
+@WIZRPL(Height=325);
+@WIZRPL(TITLE=Manual Tare);
+@WIZRPL(STATE=STAYONTOP);
+@WIZRPL(OPTIONS=BI0);
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="../../Images/pos_btn_ncbp.css" type="text/css" />
+    <script type="text/javascript" src="../../Images/ncbp_pos.js"></script>
+    <title>Manual Tare Screen</title>
+</head>
+<body class="PosBtn" scroll="auto" onselectstart="return false">
+    <div id="Btn"></div>
+    <div id="NavBtn"></div>
+    <div style="display: none">
+        @dbTable(Q1,SELECT F1021, F1178 FROM TAR_TAB WHERE F06 <> 99)
+        <dbtable>
+            <script>ncbp_pos.dynamicBtn.addItm('@dbrow(Q1,F1021)', 'ENTRY=@dbrow(Q1,F1178,#)&amp;FCT=47')</script>
+        </dbtable>
+        <script>ncbp_pos.dynamicBtn.addItm('Other','FCT=47')</script>
+    </div>
+
+    <div style="display: none"><script>ncbp_pos.dynamicBtn.createBtn(0, 12, 'Blue', 'btn=close')</script></div>
+</body>
+</html>

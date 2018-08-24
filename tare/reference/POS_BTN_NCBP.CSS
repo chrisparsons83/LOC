@@ -1,0 +1,164 @@
+@import url('ncbp_pos.css');
+
+body.PosBtn {
+    background-color: #00263B;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+div.PosBtn {
+    box-sizing: border-box;
+    border-width: 3px;
+    border-style: outset;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'arial';
+    font-weight: bold;
+    font-size: 12pt;
+    text-shadow: 1px 1px 2px #000;
+    color: #FFFFFF;
+    background-color: #5386DD;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    div.PosBtn:Active {
+        border-style: inset;
+        background-image: linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20));
+    }
+
+/* PosBtn Sizes */
+div.Size60x60 {
+    width: 57px;
+    height: 57px;
+}
+
+div.Size80x70 {
+    width: 77px;
+    height: 67px;
+}
+
+div.Size90x60 {
+    width: 87px;
+    height: 57px;
+}
+
+div.Size120x70 {
+    width: 117px;
+    height: 67px;
+}
+
+div.Size90x70 {
+    width: 87px;
+    height: 67px;
+}
+
+div.Size180x70 {
+    width: 177px;
+    height: 67px;
+}
+
+div.Size180x145 {
+    font-size: 25pt;
+    width: 177px;
+    height: 142px;
+}
+
+/* -------------Basic Colors------------  */
+div.LightRed {
+    background-color: #EB0000;
+}
+
+div.Red {
+    background-color: #AB0000;
+}
+
+div.DarkRed {
+    background-color: #7B0000;
+}
+
+div.LightBlue {
+    background-color: #5386dd;
+}
+
+div.Blue {
+    background-color: #3f66c2;
+}
+
+div.DarkBlue {
+    background-color: #2d498b;
+}
+
+div.LightGreen {
+    background-color: #1a9100;
+}
+
+div.Green {
+    background-color: #1a7100;
+}
+
+div.DarkGreen {
+    background-color: #1a5100;
+}
+
+div.LightGray {
+    background-color: #a1a8ab;
+}
+
+div.Gray {
+    background-color: #A1A8AB;
+}
+
+div.DarkGray {
+    background-color: #8997ab;
+}
+
+div.LightYellow {
+    background-color: #B8B800;
+}
+
+div.Yellow {
+    background-color: #A3A300;
+}
+
+div.DarkYellow {
+    background-color: #666600;
+}
+
+div.LightOrange {
+    background-color: #D6AD33;
+}
+
+div.Orange {
+    background-color: #CC9900;
+}
+
+div.DarkOrange {
+    background-color: #A37A00;
+}
+
+div.LightBrown {
+    background-color: #A37547;
+}
+
+div.Brown {
+    background-color: #7A5229;
+}
+
+div.DarkBrown {
+    background-color: #5C3D1F;
+}
+
+div.LightPurple {
+    background-color: #4D4D94;
+}
+
+div.Purple {
+    background-color: #191975;
+}
+
+div.DarkPurple {
+    background-color: #000047;
+}

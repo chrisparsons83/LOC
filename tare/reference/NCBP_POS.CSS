@@ -1,0 +1,49 @@
+html {
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#outer[id] {
+    display: inline-block;
+}
+
+#middle[id] {
+    display: table;
+    position: static;
+}
+
+#inner[id] {
+    display: table-cell;
+    vertical-align: middle;
+    position: static;
+}
+
+div.TotalContainer {
+    text-align: right;
+    position: absolute;
+    bottom: 80px;
+    right: 3px;
+}
+
+div.TotalContainerTotalSale {
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    bottom: 50px;
+    right: 3px;
+    margin: 0 3px 0 3px;
+}
+
+div.TotalContainerBalance {
+    text-align: right;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    margin: 0 3px 0 3px;
+}
+
+div.TotalElement {
+    padding: 3px;
+    text-align: center;
+    width: 100px;
+}

@@ -1,0 +1,208 @@
+body.PosBtn {
+	background-color: #00263B;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+div.PosBtn {
+    box-sizing: border-box;
+    border-width: 0px;
+    border-style: none;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 13pt;
+    text-shadow: 1px 1px 1px #000;
+    color: #FFFFFF;
+    background-color: #5386DD;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.PosBtn:Active {
+        border-style: inset;
+        background-image: linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.20));
+}
+
+/* PosBtn Sizes */
+div.Size60x60 {
+    width: 57px;
+    height: 57px;
+}
+
+div.Size80x70 {
+    width: 77px;
+    height: 67px;
+}
+
+div.Size90x60 {
+    width: 87px;
+    height: 57px;
+}
+
+div.Size120x70 {
+    width: 117px;
+    height: 67px;
+}
+
+div.Size90x70 {
+    width: 87px;
+    height: 67px;
+}
+
+div.Size180x70 {
+    font-size: 15pt;
+    width: 177px;
+    height: 67px;
+}
+
+div.Size180x145 {
+    font-size: 22pt;
+    width: 177px;
+    height: 142px;
+}
+
+/*PCC Colors*/
+
+div.Orange {
+    background-color: #F14C37;
+}
+
+div.LightBlue {
+    background-color: #EEF4F9;
+	color: #000000;
+    text-shadow: 1px 1px 1px #8B8B8B;
+}
+
+div.Blue {
+    background-color: #CCE4F5;
+}
+
+div.DarkBlue {
+    background-color: #99CAEA;
+}
+
+div.LightYellow {
+    background-color: #F8F4CD;
+}
+
+div.Yellow {
+    background-color: #FBF9E6;
+}
+
+div.DarkYellow {
+    background-color: #F1E99B;
+}
+
+div.Purple {
+    background-color: #A03F64;
+}
+
+
+div.LightRed {
+    background-color: #D14330;
+}
+
+div.Red {
+    background-color: #D14330;
+}
+
+div.DarkRed {
+    background-color: #D14330;
+}
+
+
+/* -------------Basic Colors------------  */
+
+div.LightGreen {
+    background-color: #1a9100;
+}
+
+div.Green {
+    background-color: #1a7100;
+}
+
+div.DarkGreen {
+    background-color: #1a5100;
+}
+
+div.LightGray {
+    background-color: #a1a8ab;
+}
+
+div.Gray {
+    background-color: #A1A8AB;
+}
+
+div.DarkGray {
+    background-color: #8997ab;
+}
+
+
+
+div.LightOrange {
+    background-color: #D6AD33;
+}
+
+
+div.DarkOrange {
+    background-color: #A37A00;
+}
+
+div.LightBrown {
+    background-color: #A37547;
+}
+
+div.Brown {
+    background-color: #7A5229;
+}
+
+div.DarkBrown {
+    background-color: #5C3D1F;
+}
+
+div.LightPurple {
+    background-color: #4D4D94;
+}
+
+
+
+div.DarkPurple {
+    background-color: #000047;
+}
+
+div.TotalContainer {
+    text-align: right;
+    position: absolute;
+    bottom: 80px;
+    right: 3px;
+}
+
+div.TotalContainerTotalSale {
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    bottom: 50px;
+    right: 3px;
+    margin: 0 3px 0 3px;
+    color: white;
+}
+
+div.TotalContainerBalance {
+    text-align: right;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    margin: 0 3px 0 3px;
+    color: white;
+}
+
+div.TotalElement {
+    padding: 3px;
+    text-align: center;
+    width: 100px;
+    color: white;
+}
