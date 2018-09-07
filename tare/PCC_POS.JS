@@ -4,7 +4,7 @@
 
 
 // pcc function serves as the main method of accessing custom PCC functions
-var pcc = (function () {
+var pcc = (function (ncbp_pos) {
 
 	// dynaFrame is a dynamic Frame to mimic ACS-IR functionality by keeping the
 	// working area within the main sales screen and not opening a new overlay screen
@@ -33,5 +33,20 @@ var pcc = (function () {
 		}
 	}
 
+	function dbTable(one, two) {
+		console.log('test');
+		ncbp_pos.dynamicBtn.addItm('1', '1');
+		ncbp_pos.dynamicBtn.addItm('2', '2');
+		ncbp_pos.dynamicBtn.addItm('3', '3');
+		ncbp_pos.dynamicBtn.addItm('4', '4');
+		ncbp_pos.dynamicBtn.addItm('5', '5');
+		ncbp_pos.dynamicBtn.addItm('6', '6');
+		ncbp_pos.dynamicBtn.addItm('7', '7');
+		ncbp_pos.dynamicBtn.addItm('8', '8');
+	}
 
-}());
+	return {
+		dynaFrame: dynaFrame,
+		dbTable: dbTable
+	}
+}(ncbp_pos));

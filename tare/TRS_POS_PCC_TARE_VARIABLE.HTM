@@ -3,18 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <link rel="stylesheet" href="../../Images/pos_btn_ncbp.css" type="text/css" />
-    <script type="text/javascript" src="../../Images/ncbp_pos.js"></script>
+    <link rel="stylesheet" href="reference/pos_btn_ncbp.css" type="text/css" />
+    <script type="text/javascript" src="reference/ncbp_pos.js"></script>
+    <script type="text/javascript" src="pcc_pos.js"></script>
     <title>btn_func</title>
 </head>
 <body class="PosBtn" scroll="auto" onselectstart="return false">
     <div id="Btn"></div>
     <div id="NavBtn"></div>
-    <div style="display: none">
+    <div>
 
         <!-- Select data from a table and then using the <dbtable> section iterate over each row returned
         and use returned data in a javascript function -->
-        @dbTable(Q1,SELECT F06, F1021, F1178 @FMT(CMP,'@DBHOT(SAL_REG,F1070,#)=0',,'*-1') AS F1178 FROM TAR_TAB WHERE F06 <> 99)
+        <script>
+            pcc.dbTable('Q1',"SELECT F06, F1021, F1178 FMT(CMP,'@DBHOT(SAL_REG,F1070,#)=0',,'*-1') AS F1178 FROM TAR_TAB WHERE F06 <> 99")
+        </script>
         <dbtable>
             <script>ncbp_pos.dynamicBtn.addItm('@dbrow(Q1,F1021)', 'SAL_REG[F06]=@DBROW(Q1,F06,#)&amp;SAL_REG[F1178]=@dbRow(Q1,F1178,#)&amp;SAL_REG[F1740]=@RPTTTL(@DBHOT(SAL_REG,F1740,#)-@DBROW(Q1,F1178,#),#)&amp;SAL_REG[F67]=@RPTTTL(@DBHOT(SAL_REG,F1740,#)-@DBROW(Q1,F1178,#),#)&amp;FCT=695')</script>
         </dbtable>
